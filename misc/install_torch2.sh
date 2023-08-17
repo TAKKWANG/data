@@ -5,8 +5,6 @@ if [ $3 == True ]; then
   mim install mmdet>=3.0.0
 fi
 
-git clone https://github.com/deforum-art/sd-webui-deforum /content/$1/extensions/deforum
-
 git clone -b v1.5.1 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/$1
 if [ $2 == True ]; then
   git clone https://github.com/ninjaneural/controlnet /content/$1/extensions/controlnet
